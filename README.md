@@ -1,10 +1,20 @@
-# 🛒 Dynamic Pricing for E-Commerce (Airbnb Chicago Case Study)
+# Dynamic Pricing for E-Commerce (Airbnb Chicago)
 
 This project focuses on implementing a **dynamic pricing model** for the e-commerce sector using **real-world Airbnb data from Chicago**. As e-commerce platforms face rapid shifts in customer demand and market trends, this solution helps generate optimized price recommendations using machine learning. The project emphasizes both business sustainability and customer satisfaction.
 
 ---
 
-## 📌 Overview
+## Tech Stack
+
+- Python
+- Jupyter Notebook
+- scikit-learn
+- Pandas, NumPy, Matplotlib, Seaborn
+- GridSearchCV, KNN, Random Forest, Gradient Boosting, SVR
+
+---
+
+## Overview
 
 Dynamic pricing allows businesses to respond in real-time to changing market conditions. This project explores and compares various regression algorithms to predict Airbnb listing prices based on features such as amenities, reviews, availability, and location.
 
@@ -17,7 +27,7 @@ Key goals:
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 **Source:** [Inside Airbnb](https://insideairbnb.com/get-the-data)  
 **City:** Chicago  
@@ -35,7 +45,7 @@ Key goals:
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 - Identified missing values in features like `bedrooms` and `review_scores`
 - Detected and removed duplicates
@@ -45,7 +55,7 @@ Key goals:
 
 ---
 
-## 🧹 Data Preprocessing
+## Data Preprocessing
 
 Steps included:
 
@@ -58,7 +68,7 @@ Steps included:
 
 ---
 
-## 🛠️ Feature Engineering & Selection
+## Feature Engineering & Selection
 
 - Used **KNN clustering** on latitude and longitude to create `cluster_label`
 - Dropped raw lat/lon after clustering
@@ -67,7 +77,7 @@ Steps included:
 
 ---
 
-## 🤖 Machine Learning Models
+## Machine Learning Models
 
 The dataset was split 80/20 for training and testing. The following models were trained, tuned, and evaluated:
 
@@ -79,7 +89,7 @@ The dataset was split 80/20 for training and testing. The following models were 
 | **Gradient Boosting** | **10854.47** | **104.18** | **52.65** | **0.74** |
 | SVR (RBF kernel)      | 24716.01     | 157.21     | 62.14     | 0.42     |
 
-> 🔥 **Best Models:** Random Forest & Gradient Boosting
+> **Best Models:** Random Forest & Gradient Boosting
 
 ---
 
@@ -91,7 +101,7 @@ The dataset was split 80/20 for training and testing. The following models were 
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 - Integrate **neural networks** for improved pattern recognition
 - Scale the model with **larger datasets**
@@ -100,39 +110,6 @@ The dataset was split 80/20 for training and testing. The following models were 
 
 ---
 
-## 🧰 Tech Stack
-
-- Python
-- Jupyter Notebook
-- scikit-learn
-- Pandas, NumPy, Matplotlib, Seaborn
-- GridSearchCV, KNN, Random Forest, Gradient Boosting, SVR
-
----
-
-## 📁 Repository Contents
-
-- `notebooks/`: EDA, preprocessing, and model training
-- `visuals/`: Plots for feature importance, error metrics, clustering
-- `models/`: Model training and evaluation scripts
-- `README.md`: Project documentation
-
----
-
-## 📎 Reference Papers
-
-- [Optimizing E-Commerce Profits with ML (Sarkar et al., 2023)](https://doi.org/10.32996/jcsts.2023.5.4.19)
-- [Dynamic Pricing with Deep RL (Liu et al., 2019)](https://arxiv.org/abs/1912.02572)
-- [Gradient Boosting Tutorial (Natekin et al., 2013)](https://doi.org/10.3389/fnbot.2013.00021)
-
----
-
 ## 🏁 Conclusion
 
 This project demonstrates the power of machine learning in building robust, data-driven pricing systems. By modeling dynamic pricing with real-world Airbnb data, it enables better decision-making for e-commerce platforms and offers future potential for neural network integration and deployment.
-
----
-
-## 🔗 GitHub Repository
-
-[👉 View Source Code](https://github.com/GopiShankarR/CS584Group-29-Dynamic-Pricing-for-E-Commerce)
