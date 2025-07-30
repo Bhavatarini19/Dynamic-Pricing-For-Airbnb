@@ -93,7 +93,7 @@ The dataset was split 80/20 for training and testing. The following models were 
 
 ---
 
-## 📊 Insights
+## Insights
 
 - Ensemble models showed the strongest predictive power
 - Linear and Ridge Regression were interpretable but less effective for capturing complex data patterns
@@ -110,6 +110,6 @@ The dataset was split 80/20 for training and testing. The following models were 
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 
 This project demonstrates the power of machine learning in building robust, data-driven pricing systems. By modeling dynamic pricing with real-world Airbnb data, it enables better decision-making for e-commerce platforms and offers future potential for neural network integration and deployment.
